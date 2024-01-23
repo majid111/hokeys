@@ -27,6 +27,9 @@
                         pPrimary: '#13131899',
                         footerText: '#FFFFFF99',
                         footerTitle: '#FFFFFF',
+                        btnP: '#FF4240',
+                        navTitle: '#424247',
+                        
                     }
                 }
             }
@@ -44,7 +47,7 @@
     <!-- header starts here -->
     <header class="max-w-7xl mx-auto">
         <!-- Navbar starts here -->
-        <nav>
+        <nav class="titlePrimary">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -52,46 +55,36 @@
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Home</a></li>
+                      <li class="text-navTitle"><a>About</a></li>
+                      <li class="text-navTitle"><a>Pages</a></li>
+                      <li class="text-navTitle"><a>Blog</a></li>
+                      <li class="text-navTitle"><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <a class="btn btn-ghost text-xl space-x-0">Hockey<span class="text-[#FF4240]">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li class="text-[#FF4240]"><a>Home</a></li>
+                      <li class="text-navTitle"><a>About</a></li>
+                      <li class="text-navTitle"><a>Pages</a></li>
+                      <li class="text-navTitle"><a>Blog</a></li>
+                      <li class="text-navTitle"><a>Contact</a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
                     <button class="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                       </button>
-                  <a class="btn">Button</a>
+                  <a class="btn bg-btnP text-white">Get Ticket</a>
                 </div>
               </div>
         </nav>
         <!-- Banner starts here -->
-        <div class="banner">
+        <div class="banner my-12">
 
-            <div class="carousel w-full">
+            <div class="carousel w-full h-[550px]">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="Images/1.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -133,41 +126,41 @@
     <!-- Main starts here -->
     <main class="max-w-7xl mx-auto">
         <!-- section-1 progress bar starts here -->
-        <section class="text-center">
-            <div>
-                <h2>Professional Hockeys Club</h2>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <section class="text-center m-12 space-y-12">
+            <div class="text-center py-8 space-y-6 px-4 border-y-2 border-dashed lg:px-72">
+                <h2 class="titlePrimary font-extrabold text-4xl">Professional Hockeys Club</h2>
+                <p class="pPrimary font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
-            <div class="flex justify-evenly gap-8 border-2 space-y-6">
-                <div>
-                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+            <div class="flex justify-evenly gap-8">
+                <div class="space-y-6">
+                    <div class="radial-progress text-btnP" style="--value:87;" role="progressbar"><span class="text-titlePrimary font-extrabold text-2xl">87%</span></div>
                     <div class="space-y-4">
-                        <h4>Prayer Facility</h4>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .
+                        <h4 class="text-titlePrimary text-xl font-semibold ">Prayer Facility</h4>
+                        <p class="text-pPrimary">Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
                 </div>
-                <div>
-                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                    <div>
-                        <h4>Prayer Facility</h4>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .
+                <div class="space-y-6">
+                    <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-titlePrimary font-extrabold text-2xl">95%</span></div>
+                    <div class="space-y-4">
+                        <h4 class="text-titlePrimary text-xl font-semibold ">Experienced Coach</h4>
+                        <p class="text-pPrimary">Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
                 </div>
-                <div>
-                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                    <div>
-                        <h4>Prayer Facility</h4>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .
+                <div class="space-y-6">
+                    <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-titlePrimary font-extrabold text-2xl">90%</span></div>
+                    <div class="space-y-4">
+                        <h4 class="text-titlePrimary text-xl font-semibold ">Senior Player</h4>
+                        <p class="text-pPrimary">Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
                 </div>
-                <div>
-                    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
-                    <div>
-                        <h4>Prayer Facility</h4>
-                        <p>Amet consectetur. Condimentum dignissim adipiscing .
+                <div class="space-y-6">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span class="text-titlePrimary font-extrabold text-2xl">80%</span></div>
+                    <div class="space-y-4">
+                        <h4 class="text-titlePrimary text-xl font-semibold ">Training Ground</h4>
+                        <p class="text-pPrimary">Amet consectetur. Condimentum dignissim adipiscing .
                         </p>
                     </div>
                 </div>
@@ -175,6 +168,105 @@
 
         </section>
         <!-- section-1 ends here -->
+        <!-- section-2 program section starts here -->
+        <section class="">
+            <div class="text-center py-8 space-y-6 px-4 border-y-2 border-dashed lg:px-72">
+                <h2 class="titlePrimary font-extrabold text-4xl">Program Sections</h2>
+                <p class="pPrimary font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="">
+                <div class="card  bg-[#1313187F] shadow-xl image-full">
+                    <figure><img src="Images/2.png" alt="Junior Program" /></figure>
+                   <div class="flex justify-end">
+                    <div class="card-body p-10">
+                        <h2 class="card-title">Junior Program</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <div class="card-actions">
+                          <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                      </div>
+                   </div>
+                  </div>                
+            </div>
+
+        </section>
+        <!-- section-2 ends here -->
+        <!-- section-4 FAQ section starts here -->
+        <section class="space-y-12 my-12">
+            <div class="text-center py-8 space-y-6 px-4 border-y-2 border-dashed lg:px-72">
+                <h2 class="titlePrimary font-extrabold text-4xl">Clients Question</h2>
+                <p class="pPrimary font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="flex p-8 gap-10">
+                <div>
+                    <img src="Images/11.png" alt="">
+                </div>    
+                <div class="flex-auto">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Pricing
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                </div>     
+            </div>
+
+        </section>
+        <!-- section-4 ends here -->
 
     </main>
     <!-- Main ends here -->
@@ -188,14 +280,18 @@
             <div>
                 <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
-            <div>
+            <div class="space-y-3">
                 <div class="flex items-center gap-4">
-                    <img src="Images/" alt="">
-                    <p>hockeys@support.com</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-500 inline mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                      </svg>
+                          hockeys@support.com</p>
                 </div>
                 <div class="flex items-center gap-4">
-                    <img src="Images/" alt="">
-                    <p>(+62)-123-321-543</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-500 inline mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                      </svg>
+                        (+62)-123-321-543</p>
                 </div>
             </div>
         </aside> 
